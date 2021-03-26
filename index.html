@@ -6,7 +6,70 @@
   </head>
   <body>
     <script type="text/javascript">
+  // Creare un array di oggetti: ogni oggetto descriverà
+  // una bici da corsa con le seguenti proprietà: nome e peso.
+  // Stampare a schermo la bici con peso minore.
+    // var bici = [
+    // {'nome': 'bici1', 'peso':5},
+    // {'nome': 'bici2', 'peso':1},
+    // {'nome': 'bici3', 'peso':6},
+    // ];
+    //
+    // var biciPicc = {'nome': 'nome+', 'peso': Number.MAX_SAFE_INTEGER };
+    //
+    // for (var i = 0; i < bici.length; i++) {
+    //   const bicis = bici[i];
+    //     //console.log(bicis);
+    //   const {peso} = bicis;
+    //
+    //   if(peso < biciPicc.peso){
+    //     biciPicc = bicis;     //<---------- DA CHIARIRE
+    //   }
+    // }
+    // console.log(biciPicc);
+
+  // Creare un array di oggetti di squadre di calcio.  - - - - - - - - - - - - - -  -
+  // Ogni squadra avrà diverse proprietà:
+  // nome, punti fatti, falli subiti.
+  // Nome sarà l'unica proprietà da compilare,
+  // le altre saranno tutte settate a 0.
+
+    let squadre = [
+      {'nome':'rossi','vittorie': 0,'perse': 0},
+      {'nome':'blu', 'vittorie': 0,'perse': 0},
+      {'nome':'gialli','vittorie': 0,'perse': 0}
+    ];
+    // console.log(squadre);
+  // Generare numeri random al posto degli 0 nelle proprietà:
+  // punti fatti e falli subiti
+    for (var i = 0; i < squadre.length; i++) {
+      const squadra = squadre[i];
+      squadra['vittorie'] = (Math.floor(Math.random()*10)+1);
+      squadra['perse'] = (Math.floor(Math.random()*10)+1);
+    }
+
+    // console.log(squadre);
+
+  // Usando la destrutturazione creiamo un nuovo array  - - - - - - - - - - - - - -  -
+  // i cui elementi contengono solo nomi e falli subiti
+  // e stampiamo tutto in console.
+    let sconfitti = [];
+    for (var i = 0; i < squadre.length; i++) {
+      const sconf = squadre[i];
       
+    }
+    console.log(sconfitti);
+
+  // let arrCut = [];
+  //   for (let i = 0; i < teams.length; i++) {
+  //       let{nome, falliSubiti} = teams[i];
+  //       arrCut[i] = {nome, falliSubiti};
+  //   }
+  //   console.log(arrCut);
+
+
+
+
     </script>
   </body>
 </html>
